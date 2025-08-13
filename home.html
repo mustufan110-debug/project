@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Locations</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contact section */
+        .contact {
+            padding: 40px;
+            background: #f9f9f9;
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Tab buttons */
+        .tab-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            padding: 8px 15px;
+            margin: 5px;
+            border: none;
+            background: #ccc;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .tab-btn:hover {
+            background: #bbb;
+        }
+
+        .tab-btn.active {
+            background: #333;
+            color: #fff;
+        }
+
+        /* Tab content */
+        .tab-pane {
+            display: none;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .tab-pane.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        /* Simple fade-in animation */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        /* Location headings */
+        .location-details h3 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .location-details p {
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Where shipping meets satisfaction.</h2>
+        
+        <!-- Location Tabs -->
+        <div class="location-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="mumbai">Mumbai</button>
+                <button class="tab-btn" data-tab="chennai">Chennai</button>
+                <button class="tab-btn" data-tab="ahmedabad">Ahmedabad</button>
+                <button class="tab-btn" data-tab="delhi">Delhi</button>
+                <button class="tab-btn" data-tab="bengaluru">Bengaluru</button>
+                <button class="tab-btn" data-tab="hyderabad">Hyderabad</button>
+                <button class="tab-btn" data-tab="kolkata">Kolkata</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Mumbai Tab -->
+                <div class="tab-pane active" id="mumbai">
+                    <div class="location-details">
+                        <h3>MUMBAI (Corporate Office)</h3>
+                        <p>Unit #25/26/27, Adarsh Industrial Estate,<br>
+                        Sahar Road, Chakala, Andheri (East),<br>
+                        Mumbai – 400 099</p>
+                        <p><strong>Phone:</strong> +91 67539999</p>
+                    </div>
+                </div>
+                
+                <!-- Chennai Tab -->
+                <div class="tab-pane" id="chennai">
+                    <div class="location-details">
+                        <h3>CHENNAI</h3>
+                        <p>NO.22, Vembuliamman Koil Street,<br>
+                        Pazhavandhangal,<br>
+                        Chennai-600114. (India)</p>
+                        <p><strong>Phone:</strong> 044-2224 4403 / 044-2224 4404</p>
+                    </div>
+                </div>
+
+                <!-- Ahmedabad Tab -->
+                <div class="tab-pane" id="ahmedabad">
+                    <div class="location-details">
+                        <h3>AHMEDABAD</h3>
+                        <p>H-108: Titanium City Centre Near<br>
+                        Sachin Tower, 100 Ft.Road, Satelite,<br>
+                        Ahmedabad-380015.</p>
+                        <p><strong>Phone:</strong> 079-40370976, 9879548363, 9510540920</p>
+                    </div>
+                </div>
+
+                <!-- Delhi Tab -->
+                <div class="tab-pane" id="delhi">
+                    <div class="location-details">
+                        <h3>DELHI</h3>
+                        <p>A-150/151 Gr Floor, Road no 4, Street no 9,<br>
+                        Mahipalpur Ext, New Delhi 110037</p>
+                        <p><strong>Phone:</strong> 91-11-26784757/58</p>
+                    </div>
+                </div>
+
+                <!-- Bengaluru Tab -->
+                <div class="tab-pane" id="bengaluru">
+                    <div class="location-details">
+                        <h3>BENGALURU</h3>
+                        <p>No: 304, 3rd Floor, Connection Point,<br>
+                        Konena Agrahara, Airport Exit Road,<br>
+                        Bengaluru – 560 017</p>
+                        <p><strong>Phone:</strong> 91-80-25526936/41258518</p>
+                        <p><strong>Fax:</strong> 91-80-25224935</p>
+                    </div>
+                </div>
+
+                <!-- Hyderabad Tab -->
+                <div class="tab-pane" id="hyderabad">
+                    <div class="location-details">
+                        <h3>HYDERABAD</h3>
+                        <p>Door No: 11-32/4/1/A/1,<br>
+                        Opp, MRO Office, Beside Church,<br>
+                        Shamshabad, RR Dist, Hyderabad,<br>
+                        Telangana – 501218.</p>
+                        <p><strong>Phone:</strong> 04029550638 / Hand Phone: 08369342070</p>
+                    </div>
+                </div>
+
+                <!-- Kolkata Tab -->
+                <div class="tab-pane" id="kolkata">
+                    <div class="location-details">
+                        <h3>KOLKATTA</h3>
+                        <p>62 Hemanta Basu Sarani, Marble House,<br>
+                        Room No 9, 1st Floor,<br>
+                        Kolkata – 700 001</p>
+                        <p><strong>Phone:</strong> 033 - 40617182</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tab Switching Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabPanes = document.querySelectorAll(".tab-pane");
+
+    tabButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            const tabId = this.getAttribute("data-tab");
+
+            // Remove active from all
+            tabButtons.forEach(btn => btn.classList.remove("active"));
+            tabPanes.forEach(pane => pane.classList.remove("active"));
+
+            // Add active to clicked
+            this.classList.add("active");
+            document.getElementById(tabId).classList.add("active");
+        });
+    });
+});
+</script>
+
+</body>
+</html>
