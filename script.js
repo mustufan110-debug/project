@@ -1569,8 +1569,399 @@ const translations = {
         'Container Freight': 'Carga de Contenedores',
         'Newsletter': 'Boletín',
         'Join our subscribers list to get the latest news and special offers.': 'Únase a nuestra lista de suscriptores para recibir las últimas noticias y ofertas especiales.',
-        'Subscribe': 'Suscribirse'
+        'Subscribe': 'Suscribirse',
+        
+        // New Why Choose Us Section
+        'WHY CHOOSE US': 'POR QUÉ ELEGIRNOS',
+        'Delivering Comprehensive Global Logistics Solutions': 'Entregando Soluciones Logísticas Globales Integrales',
+        'WHAT WE DO': 'QUÉ HACEMOS',
+        'OUR AWARD': 'NUESTRO PREMIO',
+        'COMPANY HISTORY': 'HISTORIA DE LA EMPRESA',
+        'Eastern Cargo is an independent, privately owned Indian company with over 45 years of experience providing end-to-end import and export services—covering air, sea, and land transport, along with expert customs clearance. We deliver solutions across multiple verticals such as projects, chemicals, pharma, garments, engineering goods, liquid cargo, hazardous cargo, temperature-controlled logistics, and e-commerce, all supported by a strong Pan India reach.': 'Eastern Cargo es una empresa india independiente y de propiedad privada con más de 45 años de experiencia proporcionando servicios integrales de importación y exportación, cubriendo transporte aéreo, marítimo y terrestre, junto con despacho de aduanas experto. Entregamos soluciones en múltiples verticales como proyectos, productos químicos, farmacéuticos, prendas de vestir, bienes de ingeniería, carga líquida, carga peligrosa, logística con control de temperatura y comercio electrónico, todo respaldado por una fuerte presencia en toda la India.',
+        'Warehouse Facility': 'Instalación de Almacén',
+        'Air Freight Facility': 'Instalación de Carga Aérea',
+        'Cost Effective Pricing': 'Precios Rentables',
+        'Timely Delivery': 'Entrega a Tiempo',
+        'Container delivery': 'Entrega de Contenedores',
+        'Best Team Member': 'Mejor Miembro del Equipo',
+        'Our company specializes in delivering tailored air and ocean transportation solutions to meet the unique needs of each client. Whether it\'s international freight forwarding or time-sensitive cargo, we ensure reliable, efficient, and cost-effective services across global supply chains. We deliver solutions across multiple verticals such as projects, chemicals, pharma, garments, engineering goods, liquid cargo, hazardous cargo, temperature-controlled logistics, and e-commerce, all supported by a strong Pan India reach.': 'Nuestra empresa se especializa en entregar soluciones de transporte aéreo y marítimo personalizadas para satisfacer las necesidades únicas de cada cliente. Ya sea flete internacional o carga sensible al tiempo, aseguramos servicios confiables, eficientes y rentables en cadenas de suministro globales. Entregamos soluciones en múltiples verticales como proyectos, productos químicos, farmacéuticos, prendas de vestir, bienes de ingeniería, carga líquida, carga peligrosa, logística con control de temperatura y comercio electrónico, todo respaldado por una fuerte presencia en toda la India.',
+        'Global Network': 'Red Global',
+        'Real-time Tracking': 'Seguimiento en Tiempo Real',
+        'Customs Expertise': 'Experiencia en Aduanas',
+        'Multi-modal Transport': 'Transporte Multimodal',
+        'Risk Management': 'Gestión de Riesgos',
+        'Eastern Cargo has received numerous prestigious industry awards for excellence in freight forwarding and logistics. Our consistent performance and dedication to quality have earned recognition from leading airlines, global shippers, and trusted logistics agents—solidifying our reputation as a reliable partner in international cargo solutions.': 'Eastern Cargo ha recibido numerosos premios prestigiosos de la industria por la excelencia en flete y logística. Nuestro rendimiento consistente y dedicación a la calidad han ganado reconocimiento de aerolíneas líderes, transportistas globales y agentes logísticos de confianza, solidificando nuestra reputación como un socio confiable en soluciones de carga internacional.',
+        'ISO Certified': 'Certificado ISO',
+        'Industry Awards': 'Premios de la Industria',
+        'Quality Standards': 'Estándares de Calidad',
+        'Customer Recognition': 'Reconocimiento del Cliente',
+        'AEO certified': 'Certificado AEO',
+        'Excellence Certificates': 'Certificados de Excelencia',
+        'Learn More': 'Saber Más',
+        'Address': 'Dirección',
+        'Unit #25/26/27, Adarsh Industrial Estate, Sahar Road, Chakala, Andheri (East), Mumbai – 400 099': 'Unidad #25/26/27, Adarsh Industrial Estate, Sahar Road, Chakala, Andheri (Este), Mumbai – 400 099',
+        'Phone No': 'Número de Teléfono'
     },
+    
+    // French translations
+    fr: {
+        // Navigation
+        'HOME': 'ACCUEIL',
+        'ABOUT': 'À PROPOS',
+        'MEMBERSHIPS': 'ADHÉSIONS',
+        'SERVICES': 'SERVICES',
+        'MORE': 'PLUS',
+        'Healthcare Logistics': 'Logistique de Santé',
+        'DGR Shipments': 'Expéditions DGR',
+        'Project Logistics': 'Logistique de Projet',
+        'Key Personnel': 'Personnel Clé',
+        'Calculator': 'Calculateur',
+        'Our Offices': 'Nos Bureaux',
+        'CONTACT': 'CONTACT',
+        'Have any Questions?': 'Avez-vous des questions?',
+        
+        // Hero Section
+        'Worldwide Logistics': 'Logistique Mondiale',
+        'International Air Freight': 'Fret Aérien International',
+        'Contact Us': 'Contactez-nous',
+        'Get your free quote today': 'Obtenez votre devis gratuit aujourd\'hui',
+        'Your Name': 'Votre Nom',
+        'Email*': 'Email*',
+        'Phone': 'Téléphone',
+        'Transport': 'Transport',
+        'Your Message': 'Votre Message',
+        'Request A Quote': 'Demander un Devis',
+        'Reliable & Efficient': 'Fiable et Efficace',
+        'Multimodal Transport Network': 'Réseau de Transport Multimodal',
+        'Our Services': 'Nos Services',
+        'Global Trade Solutions': 'Solutions de Commerce Mondial',
+        'Ocean Freight Solutions': 'Solutions de Fret Maritime',
+        'Get a Quote': 'Obtenir un Devis',
+        
+        // New Why Choose Us Section
+        'WHY CHOOSE US': 'POURQUOI NOUS CHOISIR',
+        'Delivering Comprehensive Global Logistics Solutions': 'Livraison de Solutions Logistiques Globales Complètes',
+        'WHAT WE DO': 'CE QUE NOUS FAISONS',
+        'OUR AWARD': 'NOTRE RÉCOMPENSE',
+        'COMPANY HISTORY': 'HISTOIRE DE L\'ENTREPRISE',
+        'Learn More': 'En Savoir Plus',
+        'Address': 'Adresse',
+        'Phone No': 'Numéro de Téléphone',
+        'Email Address': 'Adresse Email',
+        
+        // Healthcare Logistics
+        'Healthcare Logistics You Can Trust': 'Logistique de Santé en Qui Vous Pouvez Avoir Confiance',
+        'When it comes to healthcare, every shipment is critical. At Eastern Cargo, we understand that lives can depend on the safe, fast, and precise delivery of your medical products. That\'s why we provide specialized logistics solutions designed for the unique needs of the healthcare and life sciences industry.': 'Quand il s\'agit de santé, chaque expédition est critique. Chez Eastern Cargo, nous comprenons que des vies peuvent dépendre de la livraison sûre, rapide et précise de vos produits médicaux. C\'est pourquoi nous fournissons des solutions logistiques spécialisées conçues pour les besoins uniques de l\'industrie de la santé et des sciences de la vie.',
+        'Temperature-Controlled Transport:': 'Transport à Température Contrôlée:',
+        'Validated packaging and cold chain solutions for frozen, chilled, and controlled room temperature shipments.': 'Emballage validé et solutions de chaîne du froid pour les expéditions congelées, réfrigérées et à température ambiante contrôlée.',
+        'Time-Critical Deliveries:': 'Livraisons Critiques en Temps:',
+        'Priority handling for urgent shipments, with same-day and next-flight-out options.': 'Traitement prioritaire pour les expéditions urgentes, avec options le jour même et prochain vol.',
+        'Regulatory Compliance:': 'Conformité Réglementaire:',
+        'Assistance with trade, customs, and industry regulations.': 'Assistance avec les réglementations commerciales, douanières et industrielles.',
+        'Sample & Equipment Handling:': 'Manutention d\'Échantillons et d\'Équipements:',
+        'From diagnostic samples and clinical trial kits to surgical instruments and pharmaceuticals.': 'Des échantillons de diagnostic et kits d\'essais cliniques aux instruments chirurgicaux et produits pharmaceutiques.',
+        'Why Healthcare Leaders Choose Eastern Cargo:': 'Pourquoi les Leaders de la Santé Choisissent Eastern Cargo:',
+        'Dedicated healthcare logistics specialists. Nationwide and international reach with multimodal solutions. 24/7 operational support and contingency planning. Secure chain-of-custody protocols for sensitive shipments. When precision and reliability matter most — choose Eastern Cargo. Contact our healthcare logistics team today to discuss your needs.': 'Spécialistes logistiques dédiés à la santé. Portée nationale et internationale avec des solutions multimodales. Support opérationnel 24/7 et planification d\'urgence. Protocoles sécurisés de chaîne de garde pour les expéditions sensibles. Quand la précision et la fiabilité comptent le plus — choisissez Eastern Cargo. Contactez notre équipe logistique santé aujourd\'hui pour discuter de vos besoins.',
+        'When precision and reliability matter most — choose Eastern Cargo. Contact our healthcare logistics team today to discuss your needs.': 'Quand la précision et la fiabilité comptent le plus — choisissez Eastern Cargo. Contactez notre équipe logistique santé aujourd\'hui pour discuter de vos besoins.',
+        
+        // Second Healthcare Card
+        'A Passion for Time-Sensitive Shipments': 'Une Passion pour les Expéditions Sensibles au Temps',
+        'With a legacy in handling time-critical shipments since 1987, we bring unparalleled expertise to pharmaceutical logistics. Our team is known for successfully managing high-value life science products, including clinical trial shipments, new product launches, and deliveries to special and challenging territories.': 'Avec un héritage dans la gestion des expéditions critiques de temps depuis 1987, nous apportons une expertise inégalée à la logistique pharmaceutique. Notre équipe est connue pour gérer avec succès des produits de sciences de la vie de haute valeur, y compris les expéditions d\'essais cliniques, les lancements de nouveaux produits et les livraisons vers des territoires spéciaux et difficiles.',
+        'Pharma-Focused Operations:': 'Opérations Axées sur la Pharma:',
+        'A dedicated team trained specifically in the nuances of handling all types of life science products.': 'Une équipe dédiée formée spécifiquement aux nuances de la gestion de tous les types de produits de sciences de la vie.',
+        'Quality & Compliance:': 'Qualité et Conformité:',
+        'A commitment to Quality Management, Operational Excellence, and superior customs capabilities ensures your shipments meet all regulatory standards.': 'Un engagement envers la gestion de la qualité, l\'excellence opérationnelle et des capacités douanières supérieures garantit que vos expéditions respectent toutes les normes réglementaires.',
+        'Temperature-Controlled Solutions:': 'Solutions à Température Contrôlée:',
+        'We provide both Active and Passive pharma solutions to maintain strict temperature integrity for your cargo.': 'Nous fournissons à la fois des solutions pharma actives et passives pour maintenir l\'intégrité stricte de la température pour votre cargaison.',
+        'Established Carrier Relations:': 'Relations Établies avec les Transporteurs:',
+        'Over 30 years of strong partnerships with airlines and shipping companies, guaranteeing reliability, priority, and customer comfort.': 'Plus de 30 ans de partenariats solides avec des compagnies aériennes et maritimes, garantissant fiabilité, priorité et confort client.',
+        
+        // DG Shipments
+        'DG Shipments': 'Expéditions DG',
+        'Dangerous Goods, Chemical & Hazardous Shipments – Expert Logistics Solutions': 'Expéditions de Marchandises Dangereuses, Chimiques et Dangereuses – Solutions Logistiques Expertes',
+        'Transporting dangerous goods (DG), chemicals, and hazardous materials is a specialized domain, demanding utmost precision, expertise, and strict compliance with international safety standards. At Eastern Cargo we offer comprehensive DG logistics solutions for your shipments to move securely by air, sea, and road.': 'Le transport de marchandises dangereuses (DG), de produits chimiques et de matières dangereuses est un domaine spécialisé, exigeant une précision maximale, une expertise et une conformité stricte aux normes de sécurité internationales. Chez Eastern Cargo, nous offrons des solutions logistiques DG complètes pour que vos expéditions se déplacent en toute sécurité par air, mer et route.',
+        'Classification & Identification:': 'Classification et Identification:',
+        'Accurate classification of chemicals and hazardous cargo as per IATA and local regulations. We assign correct UN numbers, hazard classes, and packing groups to every shipment.': 'Classification précise des produits chimiques et des cargaisons dangereuses selon les réglementations IATA et locales. Nous attribuons les numéros ONU, classes de danger et groupes d\'emballage corrects à chaque expédition.',
+        'Certified Packaging & Labelling:': 'Emballage et Étiquetage Certifiés:',
+        'All items are packed, marked, and labelled with DG-compliant materials by trained personnel to prevent leaks, spills, and accidents. Compliance with international standards is our priority for every mode of transport.': 'Tous les articles sont emballés, marqués et étiquetés avec des matériaux conformes DG par du personnel formé pour prévenir les fuites, déversements et accidents. La conformité aux normes internationales est notre priorité pour chaque mode de transport.',
+        'Regulatory Documentation & Compliance:': 'Documentation Réglementaire et Conformité:',
+        'We manage full documentation—DG declarations, Safety Data Sheets (SDS/MSDS), permits, and insurance—ensuring flawless regulatory adherence with IATA.': 'Nous gérons la documentation complète — déclarations DG, fiches de données de sécurité (SDS/MSDS), permis et assurance — assurant une adhésion réglementaire parfaite avec l\'IATA.',
+        'Trained Handling & Secure Transport:': 'Manutention Formée et Transport Sécurisé:',
+        'Your hazardous cargo is managed by certified professionals using DG-approved containers.': 'Votre cargaison dangereuse est gérée par des professionnels certifiés utilisant des conteneurs approuvés DG.',
+        'End-to-End DG Logistics Support:': 'Support Logistique DG de Bout en Bout:',
+        'Full-spectrum services from risk assessment and regulatory consultancy to shipment scheduling, delivery, and secure warehousing.': 'Services complets de l\'évaluation des risques et de la consultation réglementaire à la planification des expéditions, la livraison et l\'entreposage sécurisé.',
+        'Ready to ship your dangerous goods, chemicals, or hazardous materials? Contact our certified DG logistics team today for a personalized quote and expert guidance on global DG shipment compliance.': 'Prêt à expédier vos marchandises dangereuses, produits chimiques ou matières dangereuses? Contactez notre équipe logistique DG certifiée aujourd\'hui pour un devis personnalisé et des conseils d\'experts sur la conformité mondiale des expéditions DG.'
+    },
+    
+    // Chinese translations
+    zh: {
+        // Navigation
+        'HOME': '首页',
+        'ABOUT': '关于我们',
+        'MEMBERSHIPS': '会员资格',
+        'SERVICES': '服务',
+        'MORE': '更多',
+        'Healthcare Logistics': '医疗物流',
+        'DGR Shipments': '危险品运输',
+        'Project Logistics': '项目物流',
+        'Key Personnel': '关键人员',
+        'Calculator': '计算器',
+        'Our Offices': '我们的办事处',
+        'CONTACT': '联系我们',
+        'Have any Questions?': '有任何问题吗？',
+        
+        // Hero Section
+        'Worldwide Logistics': '全球物流',
+        'International Air Freight': '国际空运',
+        'Contact Us': '联系我们',
+        'Get your free quote today': '立即获取免费报价',
+        'Your Name': '您的姓名',
+        'Email*': '邮箱*',
+        'Phone': '电话',
+        'Transport': '运输',
+        'Your Message': '您的留言',
+        'Request A Quote': '请求报价',
+        'Reliable & Efficient': '可靠高效',
+        'Multimodal Transport Network': '多式联运网络',
+        'Our Services': '我们的服务',
+        'Global Trade Solutions': '全球贸易解决方案',
+        'Ocean Freight Solutions': '海运解决方案',
+        'Get a Quote': '获取报价',
+        
+        // New Why Choose Us Section
+        'WHY CHOOSE US': '为什么选择我们',
+        'Delivering Comprehensive Global Logistics Solutions': '提供全面的全球物流解决方案',
+        'WHAT WE DO': '我们做什么',
+        'OUR AWARD': '我们的奖项',
+        'COMPANY HISTORY': '公司历史',
+        'Learn More': '了解更多',
+        'Address': '地址',
+        'Phone No': '电话号码',
+        'Email Address': '邮箱地址',
+        
+        // Healthcare Logistics
+        'Healthcare Logistics You Can Trust': '值得信赖的医疗物流',
+        'When it comes to healthcare, every shipment is critical. At Eastern Cargo, we understand that lives can depend on the safe, fast, and precise delivery of your medical products. That\'s why we provide specialized logistics solutions designed for the unique needs of the healthcare and life sciences industry.': '在医疗保健方面，每一次运输都至关重要。在东方货运，我们理解生命可能取决于您的医疗产品安全、快速和精确的交付。这就是为什么我们提供专门为医疗保健和生命科学行业的独特需求而设计的专业物流解决方案。',
+        'Temperature-Controlled Transport:': '温控运输：',
+        'Validated packaging and cold chain solutions for frozen, chilled, and controlled room temperature shipments.': '经过验证的包装和冷链解决方案，适用于冷冻、冷藏和室温控制的运输。',
+        'Time-Critical Deliveries:': '时效性交付：',
+        'Priority handling for urgent shipments, with same-day and next-flight-out options.': '紧急货物的优先处理，提供当日和下一航班选项。',
+        'Regulatory Compliance:': '法规合规：',
+        'Assistance with trade, customs, and industry regulations.': '协助处理贸易、海关和行业法规。',
+        'Sample & Equipment Handling:': '样品和设备处理：',
+        'From diagnostic samples and clinical trial kits to surgical instruments and pharmaceuticals.': '从诊断样本和临床试验套件到手术器械和药品。',
+        'Why Healthcare Leaders Choose Eastern Cargo:': '为什么医疗保健领导者选择东方货运：',
+        'Dedicated healthcare logistics specialists. Nationwide and international reach with multimodal solutions. 24/7 operational support and contingency planning. Secure chain-of-custody protocols for sensitive shipments. When precision and reliability matter most — choose Eastern Cargo. Contact our healthcare logistics team today to discuss your needs.': '专门的医疗保健物流专家。全国和国际覆盖，提供多式联运解决方案。24/7运营支持和应急规划。敏感货物的安全监管链协议。当精度和可靠性最重要时——选择东方货运。今天就联系我们的医疗保健物流团队讨论您的需求。',
+        'When precision and reliability matter most — choose Eastern Cargo. Contact our healthcare logistics team today to discuss your needs.': '当精度和可靠性最重要时——选择东方货运。今天就联系我们的医疗保健物流团队讨论您的需求。',
+        
+        // Second Healthcare Card
+        'A Passion for Time-Sensitive Shipments': '对时效性运输的热情',
+        'With a legacy in handling time-critical shipments since 1987, we bring unparalleled expertise to pharmaceutical logistics. Our team is known for successfully managing high-value life science products, including clinical trial shipments, new product launches, and deliveries to special and challenging territories.': '自1987年以来，我们在处理时效性关键货物方面拥有丰富经验，为制药物流带来无与伦比的专业知识。我们的团队以成功管理高价值生命科学产品而闻名，包括临床试验货物、新产品发布以及向特殊和具有挑战性的地区交付。',
+        'Pharma-Focused Operations:': '以制药为重点的运营：',
+        'A dedicated team trained specifically in the nuances of handling all types of life science products.': '专门培训的团队，专门处理各种生命科学产品的细微差别。',
+        'Quality & Compliance:': '质量和合规：',
+        'A commitment to Quality Management, Operational Excellence, and superior customs capabilities ensures your shipments meet all regulatory standards.': '对质量管理、运营卓越和卓越海关能力的承诺确保您的货物符合所有监管标准。',
+        'Temperature-Controlled Solutions:': '温控解决方案：',
+        'We provide both Active and Passive pharma solutions to maintain strict temperature integrity for your cargo.': '我们提供主动和被动制药解决方案，为您的货物保持严格的温度完整性。',
+        'Established Carrier Relations:': '已建立的承运人关系：',
+        'Over 30 years of strong partnerships with airlines and shipping companies, guaranteeing reliability, priority, and customer comfort.': '与航空公司和航运公司超过30年的强大合作伙伴关系，保证可靠性、优先性和客户舒适度。',
+        
+        // DG Shipments
+        'DG Shipments': '危险品运输',
+        'Dangerous Goods, Chemical & Hazardous Shipments – Expert Logistics Solutions': '危险品、化学品和危险货物运输 – 专业物流解决方案',
+        'Transporting dangerous goods (DG), chemicals, and hazardous materials is a specialized domain, demanding utmost precision, expertise, and strict compliance with international safety standards. At Eastern Cargo we offer comprehensive DG logistics solutions for your shipments to move securely by air, sea, and road.': '运输危险品(DG)、化学品和危险材料是一个专业领域，需要极高的精度、专业知识和严格遵守国际安全标准。在东方货运，我们为您的货物提供全面的DG物流解决方案，确保通过空运、海运和陆路安全运输。',
+        'Classification & Identification:': '分类和识别：',
+        'Accurate classification of chemicals and hazardous cargo as per IATA and local regulations. We assign correct UN numbers, hazard classes, and packing groups to every shipment.': '根据IATA和当地法规对化学品和危险货物进行准确分类。我们为每批货物分配正确的联合国编号、危险类别和包装组。',
+        'Certified Packaging & Labelling:': '认证包装和标签：',
+        'All items are packed, marked, and labelled with DG-compliant materials by trained personnel to prevent leaks, spills, and accidents. Compliance with international standards is our priority for every mode of transport.': '所有物品均由经过培训的人员使用符合DG标准的材料进行包装、标记和标签，以防止泄漏、溢出和事故。遵守国际标准是我们每种运输方式的首要任务。',
+        'Regulatory Documentation & Compliance:': '监管文件和合规：',
+        'We manage full documentation—DG declarations, Safety Data Sheets (SDS/MSDS), permits, and insurance—ensuring flawless regulatory adherence with IATA.': '我们管理完整的文件——DG声明、安全数据表(SDS/MSDS)、许可证和保险——确保与IATA的无缝监管合规。',
+        'Trained Handling & Secure Transport:': '培训处理和安全运输：',
+        'Your hazardous cargo is managed by certified professionals using DG-approved containers.': '您的危险货物由经过认证的专业人员使用DG批准的容器进行管理。',
+        'End-to-End DG Logistics Support:': '端到端DG物流支持：',
+        'Full-spectrum services from risk assessment and regulatory consultancy to shipment scheduling, delivery, and secure warehousing.': '从风险评估和监管咨询到货物调度、交付和安全仓储的全方位服务。',
+        'Ready to ship your dangerous goods, chemicals, or hazardous materials? Contact our certified DG logistics team today for a personalized quote and expert guidance on global DG shipment compliance.': '准备运输您的危险品、化学品或危险材料？今天就联系我们的认证DG物流团队，获取个性化报价和全球DG运输合规的专业指导。'
+    },
+    
+    // German translations
+    de: {
+        // Navigation
+        'HOME': 'STARTSEITE',
+        'ABOUT': 'ÜBER UNS',
+        'MEMBERSHIPS': 'MITGLIEDSCHAFTEN',
+        'SERVICES': 'DIENSTLEISTUNGEN',
+        'MORE': 'MEHR',
+        'Healthcare Logistics': 'Gesundheitslogistik',
+        'DGR Shipments': 'DGR-Sendungen',
+        'Project Logistics': 'Projektlogistik',
+        'Key Personnel': 'Schlüsselpersonal',
+        'Calculator': 'Rechner',
+        'Our Offices': 'Unsere Büros',
+        'CONTACT': 'KONTAKT',
+        'Have any Questions?': 'Haben Sie Fragen?',
+        
+        // Hero Section
+        'Worldwide Logistics': 'Weltweite Logistik',
+        'International Air Freight': 'Internationaler Luftfracht',
+        'Contact Us': 'Kontaktieren Sie uns',
+        'Get your free quote today': 'Erhalten Sie heute Ihr kostenloses Angebot',
+        'Your Name': 'Ihr Name',
+        'Email*': 'E-Mail*',
+        'Phone': 'Telefon',
+        'Transport': 'Transport',
+        'Your Message': 'Ihre Nachricht',
+        'Request A Quote': 'Angebot anfordern',
+        'Reliable & Efficient': 'Zuverlässig und Effizient',
+        'Multimodal Transport Network': 'Multimodales Transportnetzwerk',
+        'Our Services': 'Unsere Dienstleistungen',
+        'Global Trade Solutions': 'Globale Handelssysteme',
+        'Ocean Freight Solutions': 'Seefrachtlösungen',
+        'Get a Quote': 'Angebot erhalten',
+        
+        // New Why Choose Us Section
+        'WHY CHOOSE US': 'WARUM UNS WÄHLEN',
+        'Delivering Comprehensive Global Logistics Solutions': 'Umfassende globale Logistiklösungen liefern',
+        'WHAT WE DO': 'WAS WIR TUN',
+        'OUR AWARD': 'UNSER PREIS',
+        'COMPANY HISTORY': 'UNTERNEHMENSGESCHICHTE',
+        'Learn More': 'Mehr erfahren',
+        'Address': 'Adresse',
+        'Phone No': 'Telefonnummer',
+        'Email Address': 'E-Mail-Adresse',
+        
+        // Healthcare Logistics
+        'Healthcare Logistics You Can Trust': 'Gesundheitslogistik, der Sie Vertrauen Können',
+        'When it comes to healthcare, every shipment is critical. At Eastern Cargo, we understand that lives can depend on the safe, fast, and precise delivery of your medical products. That\'s why we provide specialized logistics solutions designed for the unique needs of the healthcare and life sciences industry.': 'Wenn es um die Gesundheitsversorgung geht, ist jede Sendung kritisch. Bei Eastern Cargo verstehen wir, dass Leben von der sicheren, schnellen und präzisen Lieferung Ihrer medizinischen Produkte abhängen können. Deshalb bieten wir spezialisierte Logistiklösungen, die für die einzigartigen Bedürfnisse der Gesundheits- und Biowissenschaftsindustrie entwickelt wurden.',
+        'Temperature-Controlled Transport:': 'Temperaturkontrollierter Transport:',
+        'Validated packaging and cold chain solutions for frozen, chilled, and controlled room temperature shipments.': 'Validierte Verpackung und Kühlkettenlösungen für gefrorene, gekühlte und raumtemperaturkontrollierte Sendungen.',
+        'Time-Critical Deliveries:': 'Zeitkritische Lieferungen:',
+        'Priority handling for urgent shipments, with same-day and next-flight-out options.': 'Prioritätsbehandlung für dringende Sendungen mit Optionen am selben Tag und nächsten Flug.',
+        'Regulatory Compliance:': 'Regulatorische Compliance:',
+        'Assistance with trade, customs, and industry regulations.': 'Unterstützung bei Handels-, Zoll- und Branchenvorschriften.',
+        'Sample & Equipment Handling:': 'Proben- und Gerätehandling:',
+        'From diagnostic samples and clinical trial kits to surgical instruments and pharmaceuticals.': 'Von Diagnoseproben und klinischen Studienkits bis hin zu chirurgischen Instrumenten und Pharmazeutika.',
+        'Why Healthcare Leaders Choose Eastern Cargo:': 'Warum Gesundheitsführer Eastern Cargo Wählen:',
+        'Dedicated healthcare logistics specialists. Nationwide and international reach with multimodal solutions. 24/7 operational support and contingency planning. Secure chain-of-custody protocols for sensitive shipments. When precision and reliability matter most — choose Eastern Cargo. Contact our healthcare logistics team today to discuss your needs.': 'Dedizierte Gesundheitslogistik-Spezialisten. Landesweite und internationale Reichweite mit multimodalen Lösungen. 24/7 Betriebsunterstützung und Notfallplanung. Sichere Chain-of-Custody-Protokolle für sensible Sendungen. Wenn Präzision und Zuverlässigkeit am wichtigsten sind — wählen Sie Eastern Cargo. Kontaktieren Sie noch heute unser Gesundheitslogistik-Team, um Ihre Bedürfnisse zu besprechen.',
+        'When precision and reliability matter most — choose Eastern Cargo. Contact our healthcare logistics team today to discuss your needs.': 'Wenn Präzision und Zuverlässigkeit am wichtigsten sind — wählen Sie Eastern Cargo. Kontaktieren Sie noch heute unser Gesundheitslogistik-Team, um Ihre Bedürfnisse zu besprechen.',
+        
+        // Second Healthcare Card
+        'A Passion for Time-Sensitive Shipments': 'Eine Leidenschaft für Zeitkritische Sendungen',
+        'With a legacy in handling time-critical shipments since 1987, we bring unparalleled expertise to pharmaceutical logistics. Our team is known for successfully managing high-value life science products, including clinical trial shipments, new product launches, and deliveries to special and challenging territories.': 'Mit einem Erbe in der Handhabung zeitkritischer Sendungen seit 1987 bringen wir unvergleichliche Expertise in die pharmazeutische Logistik. Unser Team ist bekannt dafür, hochwertige Life-Science-Produkte erfolgreich zu verwalten, einschließlich klinischer Studien-Sendungen, neuer Produkteinführungen und Lieferungen in besondere und herausfordernde Gebiete.',
+        'Pharma-Focused Operations:': 'Pharma-Fokussierte Operationen:',
+        'A dedicated team trained specifically in the nuances of handling all types of life science products.': 'Ein dediziertes Team, das speziell in den Nuancen der Handhabung aller Arten von Life-Science-Produkten geschult ist.',
+        'Quality & Compliance:': 'Qualität und Compliance:',
+        'A commitment to Quality Management, Operational Excellence, and superior customs capabilities ensures your shipments meet all regulatory standards.': 'Ein Engagement für Qualitätsmanagement, operative Exzellenz und überlegene Zollfähigkeiten stellt sicher, dass Ihre Sendungen alle regulatorischen Standards erfüllen.',
+        'Temperature-Controlled Solutions:': 'Temperaturkontrollierte Lösungen:',
+        'We provide both Active and Passive pharma solutions to maintain strict temperature integrity for your cargo.': 'Wir bieten sowohl aktive als auch passive Pharma-Lösungen, um die strenge Temperaturintegrität für Ihre Fracht aufrechtzuerhalten.',
+        'Established Carrier Relations:': 'Etablierte Carrier-Beziehungen:',
+        'Over 30 years of strong partnerships with airlines and shipping companies, guaranteeing reliability, priority, and customer comfort.': 'Über 30 Jahre starke Partnerschaften mit Fluggesellschaften und Reedereien, die Zuverlässigkeit, Priorität und Kundekomfort garantieren.',
+        
+        // DG Shipments
+        'DG Shipments': 'DG-Sendungen',
+        'Dangerous Goods, Chemical & Hazardous Shipments – Expert Logistics Solutions': 'Gefährliche Güter, Chemische und Gefährliche Sendungen – Experten-Logistiklösungen',
+        'Transporting dangerous goods (DG), chemicals, and hazardous materials is a specialized domain, demanding utmost precision, expertise, and strict compliance with international safety standards. At Eastern Cargo we offer comprehensive DG logistics solutions for your shipments to move securely by air, sea, and road.': 'Der Transport gefährlicher Güter (DG), Chemikalien und gefährlicher Materialien ist ein spezialisiertes Gebiet, das höchste Präzision, Expertise und strikte Einhaltung internationaler Sicherheitsstandards erfordert. Bei Eastern Cargo bieten wir umfassende DG-Logistiklösungen für Ihre Sendungen, um sicher per Luft, See und Straße zu transportieren.',
+        'Classification & Identification:': 'Klassifizierung und Identifikation:',
+        'Accurate classification of chemicals and hazardous cargo as per IATA and local regulations. We assign correct UN numbers, hazard classes, and packing groups to every shipment.': 'Genaue Klassifizierung von Chemikalien und gefährlichen Gütern gemäß IATA- und lokalen Vorschriften. Wir weisen jeder Sendung korrekte UN-Nummern, Gefahrenklassen und Verpackungsgruppen zu.',
+        'Certified Packaging & Labelling:': 'Zertifizierte Verpackung und Kennzeichnung:',
+        'All items are packed, marked, and labelled with DG-compliant materials by trained personnel to prevent leaks, spills, and accidents. Compliance with international standards is our priority for every mode of transport.': 'Alle Artikel werden von geschultem Personal mit DG-konformen Materialien verpackt, markiert und gekennzeichnet, um Lecks, Verschüttungen und Unfälle zu verhindern. Die Einhaltung internationaler Standards ist unsere Priorität für jeden Transportmodus.',
+        'Regulatory Documentation & Compliance:': 'Regulatorische Dokumentation und Compliance:',
+        'We manage full documentation—DG declarations, Safety Data Sheets (SDS/MSDS), permits, and insurance—ensuring flawless regulatory adherence with IATA.': 'Wir verwalten vollständige Dokumentation — DG-Erklärungen, Sicherheitsdatenblätter (SDS/MSDS), Genehmigungen und Versicherungen — und gewährleisten eine fehlerlose regulatorische Einhaltung mit IATA.',
+        'Trained Handling & Secure Transport:': 'Geschultes Handling und Sicherer Transport:',
+        'Your hazardous cargo is managed by certified professionals using DG-approved containers.': 'Ihre gefährliche Fracht wird von zertifizierten Fachleuten mit DG-genehmigten Containern verwaltet.',
+        'End-to-End DG Logistics Support:': 'End-to-End DG-Logistikunterstützung:',
+        'Full-spectrum services from risk assessment and regulatory consultancy to shipment scheduling, delivery, and secure warehousing.': 'Vollspektrum-Services von Risikobewertung und regulatorischer Beratung bis hin zu Sendungsplanung, Lieferung und sicherer Lagerung.',
+        'Ready to ship your dangerous goods, chemicals, or hazardous materials? Contact our certified DG logistics team today for a personalized quote and expert guidance on global DG shipment compliance.': 'Bereit, Ihre gefährlichen Güter, Chemikalien oder gefährlichen Materialien zu versenden? Kontaktieren Sie noch heute unser zertifiziertes DG-Logistik-Team für ein personalisiertes Angebot und Expertenberatung zur globalen DG-Sendungscompliance.'
+    },
+    
+    // Japanese translations
+    ja: {
+        // Navigation
+        'HOME': 'ホーム',
+        'ABOUT': '会社概要',
+        'MEMBERSHIPS': '会員資格',
+        'SERVICES': 'サービス',
+        'MORE': 'その他',
+        'Healthcare Logistics': '医療物流',
+        'DGR Shipments': '危険物輸送',
+        'Project Logistics': 'プロジェクト物流',
+        'Key Personnel': '主要スタッフ',
+        'Calculator': '計算機',
+        'Our Offices': 'オフィス',
+        'CONTACT': 'お問い合わせ',
+        'Have any Questions?': 'ご質問はありますか？',
+        
+        // Hero Section
+        'Worldwide Logistics': 'グローバル物流',
+        'International Air Freight': '国際航空貨物',
+        'Contact Us': 'お問い合わせ',
+        'Get your free quote today': '今日無料見積もりを取得',
+        'Your Name': 'お名前',
+        'Email*': 'メール*',
+        'Phone': '電話',
+        'Transport': '輸送',
+        'Your Message': 'メッセージ',
+        'Request A Quote': '見積もりを依頼',
+        'Reliable & Efficient': '信頼性と効率性',
+        'Multimodal Transport Network': 'マルチモーダル輸送ネットワーク',
+        'Our Services': '私たちのサービス',
+        'Global Trade Solutions': 'グローバル貿易ソリューション',
+        'Ocean Freight Solutions': '海上貨物ソリューション',
+        'Get a Quote': '見積もりを取得',
+        
+        // New Why Choose Us Section
+        'WHY CHOOSE US': 'なぜ私たちを選ぶのか',
+        'Delivering Comprehensive Global Logistics Solutions': '包括的なグローバル物流ソリューションの提供',
+        'WHAT WE DO': '私たちがすること',
+        'OUR AWARD': '私たちの受賞',
+        'COMPANY HISTORY': '会社の歴史',
+        'Learn More': '詳細を見る',
+        'Address': '住所',
+        'Phone No': '電話番号',
+        'Email Address': 'メールアドレス',
+        
+        // Healthcare Logistics
+        'Healthcare Logistics You Can Trust': '信頼できる医療物流',
+        'When it comes to healthcare, every shipment is critical. At Eastern Cargo, we understand that lives can depend on the safe, fast, and precise delivery of your medical products. That\'s why we provide specialized logistics solutions designed for the unique needs of the healthcare and life sciences industry.': '医療において、すべての配送が重要です。イースタンカーゴでは、生命が医療製品の安全で迅速かつ正確な配送に依存する可能性があることを理解しています。そのため、医療・生命科学業界の独自のニーズに合わせて設計された専門的な物流ソリューションを提供しています。',
+        'Temperature-Controlled Transport:': '温度管理輸送：',
+        'Validated packaging and cold chain solutions for frozen, chilled, and controlled room temperature shipments.': '冷凍、冷蔵、室温管理配送のための検証済み包装とコールドチェーンソリューション。',
+        'Time-Critical Deliveries:': '時間厳守配送：',
+        'Priority handling for urgent shipments, with same-day and next-flight-out options.': '緊急配送の優先処理、当日および次便オプション付き。',
+        'Regulatory Compliance:': '規制遵守：',
+        'Assistance with trade, customs, and industry regulations.': '貿易、税関、業界規制への支援。',
+        'Sample & Equipment Handling:': 'サンプル・機器取り扱い：',
+        'From diagnostic samples and clinical trial kits to surgical instruments and pharmaceuticals.': '診断サンプルや臨床試験キットから手術器具、医薬品まで。',
+        'Why Healthcare Leaders Choose Eastern Cargo:': '医療リーダーがイースタンカーゴを選ぶ理由：',
+        'Dedicated healthcare logistics specialists. Nationwide and international reach with multimodal solutions. 24/7 operational support and contingency planning. Secure chain-of-custody protocols for sensitive shipments. When precision and reliability matter most — choose Eastern Cargo. Contact our healthcare logistics team today to discuss your needs.': '専用の医療物流専門家。マルチモーダルソリューションによる全国・国際展開。24時間365日の運営サポートと緊急時計画。機密配送の安全な保管チェーンプロトコル。精度と信頼性が最も重要である場合—イースタンカーゴを選択してください。今日、医療物流チームにご連絡いただき、ご要望についてご相談ください。',
+        'When precision and reliability matter most — choose Eastern Cargo. Contact our healthcare logistics team today to discuss your needs.': '精度と信頼性が最も重要である場合—イースタンカーゴを選択してください。今日、医療物流チームにご連絡いただき、ご要望についてご相談ください。',
+        
+        // Second Healthcare Card
+        'A Passion for Time-Sensitive Shipments': '時間厳守配送への情熱',
+        'With a legacy in handling time-critical shipments since 1987, we bring unparalleled expertise to pharmaceutical logistics. Our team is known for successfully managing high-value life science products, including clinical trial shipments, new product launches, and deliveries to special and challenging territories.': '1987年以来の時間厳守配送の取り扱いにおける伝統により、制藥物流に比類のない専門知識をもたらします。当チームは、臨床試験配送、新製品ローンチ、特別で困難な地域への配送を含む高価値ライフサイエンス製品の成功的管理で知られています。',
+        'Pharma-Focused Operations:': '製薬特化オペレーション：',
+        'A dedicated team trained specifically in the nuances of handling all types of life science products.': 'すべてのタイプのライフサイエンス製品の取り扱いの微妙な違いに特化して訓練された専用チーム。',
+        'Quality & Compliance:': '品質・コンプライアンス：',
+        'A commitment to Quality Management, Operational Excellence, and superior customs capabilities ensures your shipments meet all regulatory standards.': '品質管理、運営卓越性、優れた税関能力への取り組みにより、お客様の配送がすべての規制基準を満たすことが保証されます。',
+        'Temperature-Controlled Solutions:': '温度管理ソリューション：',
+        'We provide both Active and Passive pharma solutions to maintain strict temperature integrity for your cargo.': 'お客様の貨物の厳格な温度整合性を維持するため、アクティブおよびパッシブ製薬ソリューションの両方を提供します。',
+        'Established Carrier Relations:': '確立されたキャリアー関係：',
+        'Over 30 years of strong partnerships with airlines and shipping companies, guaranteeing reliability, priority, and customer comfort.': '航空会社や海運会社との30年以上の強力なパートナーシップにより、信頼性、優先性、顧客の快適性を保証します。',
+        
+        // DG Shipments
+        'DG Shipments': '危険物輸送',
+        'Dangerous Goods, Chemical & Hazardous Shipments – Expert Logistics Solutions': '危険物、化学品、有害物輸送 – 専門物流ソリューション',
+        'Transporting dangerous goods (DG), chemicals, and hazardous materials is a specialized domain, demanding utmost precision, expertise, and strict compliance with international safety standards. At Eastern Cargo we offer comprehensive DG logistics solutions for your shipments to move securely by air, sea, and road.': '危険物（DG）、化学品、有害物質の輸送は専門分野であり、最高の精度、専門知識、国際安全基準への厳格な遵守が求められます。イースタンカーゴでは、お客様の貨物が空路、海路、陸路で安全に移動できるよう、包括的なDG物流ソリューションを提供しています。',
+        'Classification & Identification:': '分類・識別：',
+        'Accurate classification of chemicals and hazardous cargo as per IATA and local regulations. We assign correct UN numbers, hazard classes, and packing groups to every shipment.': 'IATAおよび地域規制に基づく化学品および危険物の正確な分類。すべての配送に正しい国連番号、危険等級、包装等級を割り当てます。',
+        'Certified Packaging & Labelling:': '認証包装・ラベリング：',
+        'All items are packed, marked, and labelled with DG-compliant materials by trained personnel to prevent leaks, spills, and accidents. Compliance with international standards is our priority for every mode of transport.': 'すべての物品は、訓練を受けた担当者がDG準拠材料で包装、マーキング、ラベリングを行い、漏れ、流出、事故を防ぎます。国際基準への遵守は、すべての輸送モードにおいて最優先事項です。',
+        'Regulatory Documentation & Compliance:': '規制文書・遵守：',
+        'We manage full documentation—DG declarations, Safety Data Sheets (SDS/MSDS), permits, and insurance—ensuring flawless regulatory adherence with IATA.': '完全な文書管理—DG宣言、安全データシート（SDS/MSDS）、許可証、保険—IATAとの完璧な規制遵守を確保します。',
+        'Trained Handling & Secure Transport:': '訓練された取り扱い・安全輸送：',
+        'Your hazardous cargo is managed by certified professionals using DG-approved containers.': 'お客様の危険物は、DG承認コンテナを使用する認定専門家によって管理されます。',
+        'End-to-End DG Logistics Support:': 'エンドツーエンドDG物流サポート：',
+        'Full-spectrum services from risk assessment and regulatory consultancy to shipment scheduling, delivery, and secure warehousing.': 'リスク評価と規制コンサルティングから配送スケジューリング、配送、安全な倉庫保管まで、フルスペクトラムサービス。',
+        'Ready to ship your dangerous goods, chemicals, or hazardous materials? Contact our certified DG logistics team today for a personalized quote and expert guidance on global DG shipment compliance.': '危険物、化学品、有害物質の配送準備はできていますか？今日、認定DG物流チームにご連絡いただき、グローバルDG配送コンプライアンスに関する個別見積もりと専門ガイダンスをご提供ください。'
+    }
     // ... existing code ...
 };
 
@@ -2068,7 +2459,7 @@ backToBottomBtn.addEventListener('mouseleave', () => {
 
 /* // Section-by-section scroll down button
 const sections = [
-    "#why-choose-us",
+    /*"#why-choose-us",
     "#about-us",
     "#services",
     "#contact-us"
@@ -2126,7 +2517,7 @@ backToNextBtn.addEventListener('mouseenter', () => {
 backToNextBtn.addEventListener('mouseleave', () => {
     backToNextBtn.style.transform = 'scale(1)';
     backToNextBtn.style.background = '#ffa500';
-}); */
+});*/
 
 
 
@@ -2537,7 +2928,7 @@ function generateCaptcha(captchaId) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-        },
+        },  
         body: 'action=get_captcha'
     })
     .then(response => response.json())

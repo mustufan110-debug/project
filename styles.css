@@ -467,6 +467,13 @@ body {
     min-height: 80px;
 }
 
+.fixed-form {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
 
 
 /* Language Modal */
@@ -617,7 +624,7 @@ body {
 /* Services Section */
 .services {
     padding: 100px 0;
-    background: #ffffff;
+    background: white;
     position: relative;
 }
 
@@ -708,7 +715,7 @@ body {
 /* About Section */
 .about {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, white 0%, #ffffff 100%);
     position: relative;
     overflow: hidden;
 }
@@ -1480,7 +1487,7 @@ body {
 /* Project Logistics Section */
 .project-logistics {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: white;
 }
 
 .project-main-title {
@@ -1936,13 +1943,13 @@ margin: 5px 0;
 line-height: 1.4;
 }*/
 
-/* Contact Section */
+/* Contact Section
 .contact {
     padding: 5rem 0;
-    background: #f8f9fa;
+    background: white;
 }
 
-/* Location Tabs */
+/* Location Tabs 
 .location-tabs {
     margin: 30px 0;
 }
@@ -1992,7 +1999,7 @@ line-height: 1.4;
     border: 1px solid #e0e0e0;
     border-top: none;
     padding: 30px;
-    /* border-radius: 0 0 10px 10px;*/
+    /* border-radius: 0 0 10px 10px;
     overflow: visible;
 }
 
@@ -2009,7 +2016,7 @@ line-height: 1.4;
     visibility: visible !important;
 }
 
-/* Force show the first tab */
+/* Force show the first tab
 #mumbai {
     display: block !important;
     opacity: 1 !important;
@@ -2151,7 +2158,157 @@ line-height: 1.4;
 .form-group textarea {
     resize: vertical;
     min-height: 100px;
+} */
+
+/* ===== Career + Contact Section Layout ===== */
+.career-contact {
+  padding: 5rem 0;
+  background: #fff;
 }
+
+.career-contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 2rem; /* Space between the forms */
+}
+
+@media (max-width: 768px) {
+  .career-contact-container {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+}
+
+/* ===== Career Form & Contact Form (Unified Styling) ===== */
+.career-form,
+.contact-form {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.career-form:hover,
+.contact-form:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.career-form h3,
+.contact-form h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.career-form p {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Form Elements ===== */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #fda403;
+}
+
+/* File Upload (Career Form) */
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+input[type="file"] {
+  padding: 6px;
+  background: #f9f9f9;
+  border: 2px dashed #ddd;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+input[type="file"]:hover {
+  border-color: #fda403;
+  background: #fffaf2;
+}
+
+/* Buttons */
+button.btn-primary {
+  background: #fda403;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+button.btn-primary:hover {
+  background: #e68a00;
+  transform: translateY(-2px);
+}
+
+/* ===== Captcha Group (Contact Form) ===== */
+.captcha-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.captcha-display {
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  color: #2c3e50;
+}
+
+.refresh-captcha {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #fda403;
+}
+
+.refresh-captcha:hover {
+  color: #e68a00;
+}
+
 
 /* Footer */
 .footer {
@@ -2586,7 +2743,7 @@ html {
 
 /* Timeline Section */
 .timeline-wrapper {
-    background: #f8f9fa;
+    background: white;
     padding: 100px 0;
     position: relative;
 }
@@ -2933,7 +3090,7 @@ html {
 /* Memberships Section */
 .memberships {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: white;
 }
 
 .memberships h2 {
@@ -3023,7 +3180,7 @@ html {
 /* Pharma Logistics Section */
 .pharma-logistics {
     padding: 80px 0;
-    background: #fff;
+    background: white;
 }
 
 .pharma-main-title {
@@ -3263,7 +3420,7 @@ html {
 }
 
 .solution-item {
-    background: #fff;
+    background: white;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -3329,7 +3486,7 @@ html {
 /* DGR Shipments Section */
 .dgr-shipments {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: white;
 }
 
 .dgr-main-title {
@@ -3438,7 +3595,7 @@ html {
 /* Personnel Section */
 .personnel {
     padding: 80px 0;
-    background: #fff;
+    background: white;
 }
 
 .personnel-filter-container {
@@ -3522,7 +3679,7 @@ html {
 /* Calculator Section */
 .calculator {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: white;
 }
 
 .calculator-container {
@@ -3879,7 +4036,7 @@ html {
 
 /* New Why Choose Us Section */
 .why-choose-us {
-    background: #ffffff;
+    background: white;
     /*background: linear-gradient(135deg, #c0392b, #FF9B00);*/
     color: black;
     padding: 80px 0;
@@ -4305,6 +4462,84 @@ html {
         transform: translateX(200vw) translateY(0) rotate(5deg);
         opacity: 0;
     }
+}
+
+
+
+/* Ship animation */
+.moving-ship {
+    position: absolute;
+    top: 42%;
+    left: -200px;
+    width: 250px;
+    animation: sailShip 15s linear infinite;
+}
+
+@keyframes sailShip {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(140vw); }
+}
+
+/* Truck animation */
+.moving-truck {
+    position: absolute;
+    bottom: 1%;
+    right: -200px; /* Start off the right side */
+    width: 250px;
+    animation: driveTruck 20s linear infinite;
+}
+
+@keyframes driveTruck {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-140vw); } /* Move towards the left */
+}
+
+
+.fly-plane {
+    position: absolute;
+    top: 1%; /* adjust vertical position */
+    left: -150px; /* start offscreen */
+    width: 150px; /* adjust plane size */
+    z-index: 10; /* ensure it appears above the background */
+    animation: planeFly 20s linear infinite;
+}
+
+/* Keyframes for flying */
+@keyframes planeFly {
+    0% {
+        transform: translateX(0) translateY(0) rotate(5deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(120vw) translateY(-50px) rotate(-5deg);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(200vw) translateY(0) rotate(5deg);
+        opacity: 0;
+    }
+}
+
+
+
+/* Truck animation */
+.move-truck {
+    position: absolute;
+    top: 16%;
+    right: -200px; /* Start off the right side */
+    width: 250px;
+    animation: driveTruck 20s linear infinite;
+}
+
+@keyframes driveTruck {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-140vw); } /* Move towards the left */
 }
 
 

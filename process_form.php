@@ -1,169 +1,104 @@
 <?php
-// Enable error reporting for debugging (remove in production)
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// process_form.php  – cPanel SMTP edition
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// Start session for CAPTCHA
+require __DIR__ . '/vendor/autoload.php';
+
+// ============= 1. CONFIGURE YOUR cPanel MAILBOX HERE =============
+const SMTP_USER = 'web@easterncargo.co.in';   // ← mailbox you created
+const SMTP_PASS = 'K.qWcq_W.&~w';        // ← its password
+// =================================================================
+
 session_start();
 
-// Function to sanitize input data
-function sanitize_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
+function sanitize($data) {
+    return htmlspecialchars(strip_tags(trim($data)));
 }
 
-// Function to validate email
-function is_valid_email($email) {
-    return filter_var($email, FILTER_VALIDATE_EMAIL);
+function json_response($success, $msg) {
+    echo json_encode(['success' => $success, 'message' => $msg]);
+    exit;
 }
 
-// Function to generate CAPTCHA
-function generate_captcha() {
+/* ---------- AJAX CAPTCHA ---------- */
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['action'] ?? '') === 'get_captcha') {
     $captcha = rand(1000, 9999);
     $_SESSION['captcha'] = $captcha;
-    return $captcha;
+    echo json_encode(['captcha' => $captcha]);
+    exit;
 }
 
-// Function to send email
-function send_email($to, $subject, $message, $headers) {
-    // Use mail() function for Linux server
-    return mail($to, $subject, $message, $headers);
+/* ---------- MAIN FORM SUBMIT ---------- */
+if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_POST['form_type'])) {
+    json_response(false, 'Invalid request.');
 }
 
-// Handle AJAX requests
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $response = array();
-    
-    // Check if it's a CAPTCHA request
-    if (isset($_POST['action']) && $_POST['action'] === 'get_captcha') {
-        $captcha = generate_captcha();
-        $response['captcha'] = $captcha;
-        echo json_encode($response);
-        exit;
-    }
-    
-    // Process form submission
-    if (isset($_POST['form_type'])) {
-        $form_type = sanitize_input($_POST['form_type']);
-        
-        // Verify CAPTCHA
-        if (!isset($_POST['captcha']) || !isset($_SESSION['captcha']) || 
-            $_POST['captcha'] != $_SESSION['captcha']) {
-            $response['success'] = false;
-            $response['message'] = 'Invalid CAPTCHA. Please try again.';
-            echo json_encode($response);
-            exit;
-        }
-        
-        // Clear CAPTCHA after successful verification
-        unset($_SESSION['captcha']);
-        
-        // Prepare email content based on form type
-        $subject = '';
-        $email_content = '';
-        
-        if ($form_type === 'quote') {
-            $subject = 'New Quote Request - Eastern Cargo Carriers';
-            
-            $name = sanitize_input($_POST['name']);
-            $email = sanitize_input($_POST['email']);
-            $phone = sanitize_input($_POST['phone']);
-            $transport = sanitize_input($_POST['transport']);
-            $message = sanitize_input($_POST['message']);
-            
-            // Validate required fields
-            if (empty($name) || empty($email) || empty($phone) || empty($transport)) {
-                $response['success'] = false;
-                $response['message'] = 'Please fill in all required fields.';
-                echo json_encode($response);
-                exit;
-            }
-            
-            // Validate email
-            if (!is_valid_email($email)) {
-                $response['success'] = false;
-                $response['message'] = 'Please enter a valid email address.';
-                echo json_encode($response);
-                exit;
-            }
-            
-            $email_content = "
-            <h2>New Quote Request from Eastern Cargo Website</h2>
-            <p><strong>Name:</strong> $name</p>
-            <p><strong>Email:</strong> $email</p>
-            <p><strong>Phone:</strong> $phone</p>
-            <p><strong>Transport Type:</strong> $transport</p>
-            <p><strong>Message:</strong> $message</p>
-            <p><strong>Submitted on:</strong> " . date('Y-m-d H:i:s') . "</p>
-            <p><strong>IP Address:</strong> " . $_SERVER['REMOTE_ADDR'] . "</p>
-            ";
-            
-        } elseif ($form_type === 'contact') {
-            $subject = 'New Contact Form Submission - Eastern Cargo Carriers';
-            
-            $name = sanitize_input($_POST['name']);
-            $email = sanitize_input($_POST['email']);
-            $phone = sanitize_input($_POST['phone']);
-            $service = sanitize_input($_POST['service']);
-            $message = sanitize_input($_POST['message']);
-            
-            // Validate required fields
-            if (empty($name) || empty($email) || empty($phone) || empty($service)) {
-                $response['success'] = false;
-                $response['message'] = 'Please fill in all required fields.';
-                echo json_encode($response);
-                exit;
-            }
-            
-            // Validate email
-            if (!is_valid_email($email)) {
-                $response['success'] = false;
-                $response['message'] = 'Please enter a valid email address.';
-                echo json_encode($response);
-                exit;
-            }
-            
-            $email_content = "
-            <h2>New Contact Form Submission from Eastern Cargo Website</h2>
-            <p><strong>Name:</strong> $name</p>
-            <p><strong>Email:</strong> $email</p>
-            <p><strong>Phone:</strong> $phone</p>
-            <p><strong>Service:</strong> $service</p>
-            <p><strong>Message:</strong> $message</p>
-            <p><strong>Submitted on:</strong> " . date('Y-m-d H:i:s') . "</p>
-            <p><strong>IP Address:</strong> " . $_SERVER['REMOTE_ADDR'] . "</p>
-            ";
-        }
-        
-        // Set email headers
-        $headers = array();
-        $headers[] = 'MIME-Version: 1.0';
-        $headers[] = 'Content-type: text/html; charset=UTF-8';
-        $headers[] = 'From: Eastern Cargo Website <noreply@easterncargo.co.in>';
-        $headers[] = 'Reply-To: ' . $email;
-        $headers[] = 'X-Mailer: PHP/' . phpversion();
-        
-        // Send email
-        $to = 'info@easterncargo.co.in';
-        $mail_sent = send_email($to, $subject, $email_content, implode("\r\n", $headers));
-        
-        if ($mail_sent) {
-            $response['success'] = true;
-            $response['message'] = 'Thank you! Your message has been sent successfully. We will get back to you soon.';
-        } else {
-            $response['success'] = false;
-            $response['message'] = 'Sorry, there was an error sending your message. Please try again later.';
-        }
-        
-        echo json_encode($response);
-        exit;
-    }
+// CAPTCHA check
+if (!isset($_POST['captcha'], $_SESSION['captcha']) ||
+    $_POST['captcha'] !== $_SESSION['captcha']) {
+    json_response(false, 'Invalid CAPTCHA.');
+}
+unset($_SESSION['captcha']);
+
+// Gather & validate common fields
+$name    = sanitize($_POST['name']    ?? '');
+$email   = sanitize($_POST['email']   ?? '');
+$phone   = sanitize($_POST['phone']   ?? '');
+$service = sanitize($_POST['service'] ?? $_POST['transport'] ?? '');
+$msgBody = sanitize($_POST['message'] ?? '');
+
+if ($name === '' || $email === '' || $phone === '' || $service === '' ||
+    !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    json_response(false, 'Please fill all required fields with valid data.');
 }
 
-// If not POST request, return error
-$response['success'] = false;
-$response['message'] = 'Invalid request method.';
-echo json_encode($response);
-?>
+// Build message
+$formType = $_POST['form_type'];
+$subject  = ($formType === 'quote')
+    ? 'New Quote Request - Eastern Cargo'
+    : 'New Contact Form - Eastern Cargo';
+
+$emailContent = "
+<h2>{$subject}</h2>
+<p><strong>Name:</strong> {$name}</p>
+<p><strong>Email:</strong> {$email}</p>
+<p><strong>Phone:</strong> {$phone}</p>
+<p><strong>Service/Transport:</strong> {$service}</p>
+<p><strong>Message:</strong><br>" . nl2br($msgBody) . "</p>
+<p><strong>Submitted:</strong> " . date('Y-m-d H:i:s') . "</p>
+<p><strong>IP:</strong> " . $_SERVER['REMOTE_ADDR'] . "</p>
+";
+
+/* ---------- SEND VIA cPanel SMTP ---------- */
+$mail = new PHPMailer(true);
+try {
+    // Server settings
+    $mail->isSMTP();
+    $mail->Host       = 'easterncargo.co.in'; // cPanel SMTP host
+    $mail->SMTPAuth   = true;
+    $mail->Username   = SMTP_USER; //web@easterncargo.co.in
+    $mail->Password   = SMTP_PASS; //K.qWcq_W.&~w
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
+
+    // Recipients
+    $mail->setFrom(SMTP_USER, 'Eastern Cargo Website');
+    $mail->addAddress('info@easterncargo.co.in');
+    $mail->addReplyTo($email, $name);
+
+    // Headers
+    $mail->MessageID = '<' . uniqid() . '@' . $_SERVER['SERVER_NAME'] . '>';
+    $mail->addCustomHeader('Date', date('r'));
+
+    // Content
+    $mail->isHTML(true);
+    $mail->Subject = $subject;
+    $mail->Body    = $emailContent;
+
+    $mail->send();
+    json_response(true, 'Thank you! We have received your message and will get back to you soon.');
+} catch (Exception $e) {
+    error_log("PHPMailer error: " . $mail->ErrorInfo);
+    json_response(false, 'Sorry, we could not send your message. Please try again later.');
+}
